@@ -1,0 +1,43 @@
+.location-connectivity__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md) var(--space-xl);
+}
+
+.location-connectivity__item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.location-connectivity__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.location-connectivity__item div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+.location-connectivity__item strong {
+  font-size: 0.95rem;
+}
+
+.location-connectivity__item span {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .location-connectivity__grid {
+    grid-template-columns: 1fr;
+  }
+}

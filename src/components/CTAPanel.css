@@ -1,0 +1,39 @@
+.cta-panel {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.cta-panel__text h3 {
+  color: var(--color-cream);
+  font-size: var(--fs-h3);
+  margin-bottom: 0.5rem;
+}
+
+.cta-panel__text p {
+  color: rgba(247, 243, 234, 0.7);
+  max-width: 460px;
+}
+
+.cta-panel__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .cta-panel {
+    padding: var(--space-lg);
+    text-align: center;
+    justify-content: center;
+  }
+  .cta-panel__actions {
+    justify-content: center;
+  }
+}
